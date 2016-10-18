@@ -56,8 +56,8 @@ public class P68 {
 		Set<Double> set = allComb.keySet();
 		for(Double k: set){
 			List<Tuple> l = allComb.get(k);
-			//In retrospect this functionality is unneeded because no duplicate tuples will be found in the list 
 			if(l.size() > 1){
+				//In retrospect this functionality is unneeded because no duplicate tuples will be found in the list 
 				if(l.get(0).compareTo(l.get(1)) != 0){
 					System.out.printf("%d^3 + %d^3 = %d^3 + %d^3\n", l.get(0).x, l.get(0).y, l.get(1).x, l.get(1).y);
 				}
